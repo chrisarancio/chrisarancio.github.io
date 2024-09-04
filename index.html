@@ -12,6 +12,7 @@
 <body>
     <div id="header">
         <div class="container">
+            <h1 class="title">Chris' Portfolio</h1>
             <nav>
                 <!-- Optional Image for Header Nav Here-->
                 <ul id="side-menu">
@@ -53,8 +54,8 @@
                      skills with Python, C++, Java, JavaScript, SQL, MySQL, PHP, HTML/CSS, Apache,
                      Tableau, and PowerBI while also aiming to gain new proficiencies in different
                      technical skills. Currently, I am looking for a full-time job after graduation
-                     (May 2025) that involves a focus on Software Engineering and Data Analytics
-                     related fields.
+                     (May 2025) that involves a focus on Software Engineering, Data Science, and/or
+                     Full Stack Web Development.
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
@@ -114,6 +115,7 @@
     -->
 
     <!-- Portfolio -->
+    <!-- Replace Links for Projecs Below -->
     <div id="portfolio">
         <div class="container">
             <h1 class="subtitle">My Work</h1>
@@ -123,7 +125,7 @@
                     <div class="layer">
                         <h3>PyTesseract</h3>
                         <p>Intern Project with PyTesseract.</p>
-                        <span class="material-symbols-outlined">arrow_outward</span>
+                        <a href="#about"><span class="material-symbols-outlined">arrow_outward</span></a>
                     </div>
                 </div>
                 <div class="work">
@@ -131,7 +133,7 @@
                     <div class="layer">
                         <h3>Battleship</h3>
                         <p>Single Player Battleship Recreated in Java</p>
-                        <span class="material-symbols-outlined">arrow_outward</span>
+                        <a href="#about"></a><span class="material-symbols-outlined">arrow_outward</span></a>
                     </div>
                 </div>
                 <div class="work">
@@ -139,7 +141,7 @@
                     <div class="layer">
                         <h3>Library SQL Database and Website</h3>
                         <p>I used HTML/CSS in combination with PHP to connect to a SQL database modeling that of a library.</p>
-                        <span class="material-symbols-outlined">arrow_outward</span>
+                        <a href="#about"></a><span class="material-symbols-outlined">arrow_outward</span></a>
                     </div>
                 </div>
             </div>
@@ -154,7 +156,7 @@
                 <h1 class="subtitle">Contact Me</h1>
                 <p><i class="fa-solid fa-envelope"></i> chrisarancio14@gmail.com</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/christopher-arancio"><i class="fa-brands fa-linkedin"><p>&nbsp;LinkedIn</p></i></a>
+                    <a href="https://www.linkedin.com/in/christopher-arancio"><i class="fa-brands fa-linkedin"><p>LinkedIn</p></i></a>
                 </div>
                 <!-- Insert Resume Link Below -->
                 <a href="" download class="btn btn2">Full Resume</a>
@@ -187,7 +189,7 @@
             for(tabContent of tabContents) {
                 tabContent.classList.remove("active-tab");
             }
-            event.target.classList.add("active-link");
+            event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
         }
     </script>
