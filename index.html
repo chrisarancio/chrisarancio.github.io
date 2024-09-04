@@ -187,9 +187,8 @@
             for(tabContent of tabContents) {
                 tabContent.classList.remove("active-tab");
             }
-            document.getElementByid(tabName).classList.add("active-link");
-            /*event.currrentTarget.classList.add("active-link");*/
-            document.getElementByid(tabName).classList.add("active-tab");
+            event.target.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
         }
     </script>
 
@@ -202,7 +201,7 @@
         }
 
         function closeMenu() {
-            sideMenu.style.right = "-200";
+            sideMenu.style.right = "-200px";
         }
     </script>
 
