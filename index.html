@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris' Portfolio</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/fdaa1780a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- Optional Image for Header Nav Here-->
+                <ul id="side-menu">
+                    <!--<li><a href="#home">Home</a></li>*/-->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="home">
+            <div class="home-row">
+                <div class="home-text">
+                    <!--<p>Software Engineer</p>-->
+                    <h1>Hi, I'm <span>Chris Arancio</span> and I'm a Computer Science student at Providence College.</h1>
+                </div>
+                <div class="home-image">
+                    <img src="/Users/chrisa/Desktop/Chris_Arancio_Badge_Photo.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="containter">
+            <div class="row">
+                <div class="about-col-img">
+                    <img src="/Users/chrisa/Desktop/Racquetball Club Logo.jpg">
+                </div>
+                <div class="about-col-desc">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hello! I am a student at Providence College studying Computer Science with
+                     minors in Data Science and Mathematics. I am seeking to apply and enhance my 
+                     skills with Python, C++, Java, JavaScript, SQL, MySQL, PHP, HTML/CSS, Apache,
+                     Tableau, and PowerBI while also aiming to gain new proficiencies in different
+                     technical skills. Currently, I am looking for a full-time job after graduation
+                     (May 2025) that involves a focus on Software Engineering and Data Analytics
+                     related fields.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>PyTesseract OCR Reader</li>
+                            <li><span>Java</span><br>Battleship</li>
+                            <li><span>SQL, JavaScript, PHP, HTML/CSS</span><br>Library Database</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>June - August 2024</span><br>Quality Assurance Intern</li>
+                            <li><span>June - August 2023</span><br>Quality Assurance Intern</li>
+                            <li><span>July 2017 - May 2023</span><br>Store Clerk</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Providence College</span><br>B.S Computer Science with Minors in Data Science and Mathematics</li>
+                            <li><span>Hanover High School</span><br>Graudated: Top 10%. Member of National Honors Society, Debate, Track/Field </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Services -->
+    <!--
+    <div id="services">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <span class="material-symbols-outlined">favorite</span>
+                <h2>PlaceHolder</h2>
+                <p>INSERT TEXT HERE</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">star</span>
+                <h2>PlaceHolder</h2>
+                <p>INSERT TEXT HERE</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">bolt</span>
+                <h2>PlaceHolder</h2>
+                <p>INSERT TEXT HERE</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+    -->
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Users/chrisa/Downloads/pytesseractLogo.png">
+                    <div class="layer">
+                        <h3>PyTesseract</h3>
+                        <p>Intern Project with PyTesseract.</p>
+                        <span class="material-symbols-outlined">arrow_outward</span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Users/chrisa/Downloads/Java-Logo.png">
+                    <div class="layer">
+                        <h3>Battleship</h3>
+                        <p>Single Player Battleship Recreated in Java</p>
+                        <span class="material-symbols-outlined">arrow_outward</span>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/Users/chrisa/Downloads/Sql_data_base_with_logo.png">
+                    <div class="layer">
+                        <h3>Library SQL Database and Website</h3>
+                        <p>I used HTML/CSS in combination with PHP to connect to a SQL database modeling that of a library.</p>
+                        <span class="material-symbols-outlined">arrow_outward</span>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/chrisarancio/personal-portfolio" class="btn">See More on My GitHub</a>
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="contact">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> chrisarancio14@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/christopher-arancio"><i class="fa-brands fa-linkedin"><p>&nbsp;LinkedIn</p></i></a>
+                </div>
+                <!-- Insert Resume Link Below -->
+                <a href="" download class="btn btn2">Full Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="contact-submit-msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>Made by Chris Arancio</p>
+    </div>
+
+    <!-- Script for Selecting Tabs in About Section -->
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+        function openTab(tabName) 
+        {
+            for(tabLink of tabLinks) {
+                tabLink.classList.remove("active-link");
+            }
+            for(tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currrentTarget.classList.add("active-link");
+            document.getElementByid(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <!-- Script for Opening and Closing Nav Menu on Smaller Screen/Mobile-->
+    <script>
+        var sideMenu = document.getElementById("side-menu");
+
+        function openMenu() {
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu() {
+            sideMenu.style.right = "-200";
+        }
+    </script>
+
+    <!-- Below Script from Jamie Wilson on GitHub at https://github.com/jamiewilson/form-to-google-sheets -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLJUunNHc7TBPx_wPLxvNxY1U4gUCB72JNYWgrGiiGt9YEEenJSyK-YzqeU4cETS2p/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("contact-submit-msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully. Thank you!"
+                /*setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)*/
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
