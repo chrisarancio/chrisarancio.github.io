@@ -74,6 +74,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.side-menu li a{
+    font-weight: bold;
+}
+
 /* Home Section */
 
 #home{
