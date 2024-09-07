@@ -395,6 +395,11 @@ nav ul li a:hover::after{
     color: #ffffff;
 }
 
+.btn.GitHub{
+    background: #006effdb;
+    color: #ffffff;
+}
+
 .contact-right form{
     width: 100%;
 }
