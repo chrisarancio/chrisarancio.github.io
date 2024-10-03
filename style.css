@@ -526,9 +526,13 @@ nav .fas{
     }
 
     .work img {
-        height: 500px;
+        height: 300px;
     }
 
+    .work-list .work{
+        height: 300px;
+    }
+    
     .footer{
         font-size: 14px;
     }
